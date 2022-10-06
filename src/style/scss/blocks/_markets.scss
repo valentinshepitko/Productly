@@ -1,0 +1,49 @@
+.markets{
+
+  padding-bottom: 166px;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content{
+    max-width: 486px;
+  }
+
+  &__pre-title{
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 3px;
+    color: $grey;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 22px;
+  }
+
+  &__desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    color: $grey;
+  }
+
+  &__headline{
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+
+  &__text{
+    padding-bottom: 25px;
+
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}

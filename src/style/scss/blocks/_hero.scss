@@ -1,0 +1,67 @@
+.hero{
+  padding-top: 30px;
+  padding-bottom: 153px;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__content{
+    max-width: 516px;
+  }
+
+  &__title{
+    font-size: 44px;
+    padding-bottom: 30px;
+    line-height: 54px;
+  }
+
+  &__text{
+    color: $grey;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 458px;
+    padding-bottom: 45px;
+  }
+
+
+  &__start{
+    border-radius: 4px;
+    color: white;
+    background-color: $orange;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 41px;
+    margin-right: 40px;
+
+    &:hover{
+      background-color: white;
+      color: $orange;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__watch{
+    color: $orange;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration-line: underline;
+    position: relative;
+
+    &:hover{
+      text-decoration-line: none;
+      transition: ease-in-out 0.3s;
+    }
+
+    &:before{
+      position: absolute;
+      width: 17px;
+      height: 19px;
+      left: -25px;
+      content: '';
+      background-image: url("../../../../src/img/play.svg");
+    }
+  }
+}

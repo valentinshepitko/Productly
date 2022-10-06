@@ -1,0 +1,63 @@
+.header{
+
+  padding: 25px 0 25px 0;
+  margin-top: 25px;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo-link{
+    margin-right: 310px;
+  }
+
+  &__nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-right: 45px;
+  }
+
+  &__nav-link{
+    color: $black;
+    font-size: 14px;
+
+    &:hover{
+      color: $orange;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__sign-in{
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 11px 25px;
+    color: #173A56;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 14px;
+
+    &:hover{
+      background-color: $orange;
+      color: white;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__sign-up{
+    background-color: $orange;
+    border-radius: 4px;
+    padding: 11px 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    &:hover{
+      background-color: white;
+      color: #173A56;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+}

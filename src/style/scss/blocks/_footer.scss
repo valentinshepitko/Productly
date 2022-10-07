@@ -1,0 +1,75 @@
+.footer{
+
+  &__line{
+    border-top: solid 1px rgba(188, 208, 229, 0.496913);
+    padding-bottom: 103px;
+  }
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__logo-link{
+    margin-right: 140px;
+  }
+
+  &__nav-title{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  &__nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: $grey;
+
+    &:hover{
+      color: $orange;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__sign-up-title{
+    max-width: 280px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__input{
+    display: block;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 128px 15px 15px;
+    margin-bottom: 30px;
+
+    &::placeholder{
+      font-size: 16px;
+      color: #BCD0E5;
+      overflow: visible;
+    }
+
+
+  }
+
+  &__button{
+    border-radius: 4px;
+    background-color: $orange;
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: transparent;
+      color: $orange;
+    }
+  }
+}

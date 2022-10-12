@@ -2,6 +2,10 @@
 
   padding-bottom: 166px;
 
+  @include breakpoint('xs'){
+    padding-bottom: 100px;
+  }
+
   &__holder{
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +14,11 @@
 
   &__content{
     max-width: 486px;
+
+    @include breakpoint('lg'){
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
   }
 
   &__pre-title{
@@ -44,6 +53,21 @@
 
     &:last-child{
       padding-bottom: 0;
+    }
+  }
+
+  &__image{
+
+    @include breakpoint('xs'){
+      max-width: 300px;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+
+    @include breakpoint('lg'){
+      width: 65%;
+      margin: 0 auto;
+      padding-top: 60px;
     }
   }
 }

@@ -9,10 +9,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include breakpoint('xs'){
+      width: 70%;
+    }
   }
 
   &__logo-link{
     margin-right: 140px;
+
+    @include breakpoint('xs'){
+      margin: 0 auto;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__nav{
+
+    @include breakpoint('xs'){
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
   }
 
   &__nav-title{
@@ -48,12 +65,12 @@
     padding: 15px 128px 15px 15px;
     margin-bottom: 30px;
 
+
     &::placeholder{
       font-size: 16px;
       color: #BCD0E5;
       overflow: visible;
     }
-
 
   }
 
@@ -66,6 +83,11 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+
+    @include breakpoint('xs'){
+      margin: 0 auto;
+      display: block;
+    }
 
     &:hover{
       background-color: transparent;

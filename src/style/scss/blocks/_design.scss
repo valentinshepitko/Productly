@@ -10,6 +10,15 @@
 
   &__content{
     max-width: 486px;
+
+    @include breakpoint('xs'){
+      padding-bottom: 80px;
+    }
+
+    @include breakpoint('lg'){
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
   }
 
   &__pre-title{
@@ -44,6 +53,19 @@
 
     &:last-child{
       padding-bottom: 0;
+    }
+  }
+
+  &__image{
+
+    @include breakpoint('xs'){
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    @include breakpoint('lg'){
+      width: 65%;
+      margin: 0 auto;
     }
   }
 }

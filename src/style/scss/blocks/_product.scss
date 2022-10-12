@@ -10,6 +10,10 @@
 
   &__content{
     max-width: 486px;
+
+    @include breakpoint('lg'){
+      margin: 0 auto;
+    }
   }
 
   &__pre-title{
@@ -49,6 +53,21 @@
       height: 35px;
       background-image: url("../../../../src/img/checkmark.svg");
       left: 0;
+    }
+  }
+
+  &__image{
+
+    @include breakpoint('xs'){
+      max-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+
+    @include breakpoint('lg'){
+      width: 65%;
+      margin: 0 auto;
+      padding-bottom: 60px;
     }
   }
 }

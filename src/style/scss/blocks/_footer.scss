@@ -74,6 +74,13 @@
 
   }
 
+  &__button-holder{
+
+    @include breakpoint('xs'){
+      padding-bottom: 40px;
+    }
+  }
+
   &__button{
     border-radius: 4px;
     background-color: $orange;

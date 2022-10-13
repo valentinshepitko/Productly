@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="src/js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,11 +29,14 @@
                        <li class="header__nav-item"><a href="#" class="header__nav-link">Pricng</a></li>
                        <li class="header__nav-item"><a href="#" class="header__nav-link">Resources</a></li>
                    </ul>
+                   <ul class="header__button-list">
+                       <a href="#" class="header__sign-in">Sign In</a>
+                       <a href="#" class="header__sign-up">Sign Up</a>
+                   </ul>
                </nav>
-               <ul class="header__button-list">
-                   <a href="#" class="header__sign-in">Sign In</a>
-                   <a href="#" class="header__sign-up">Sign Up</a>
-               </ul>
+               <button class="header__burger">
+                   <span></span>
+               </button>
            </div>
         </div>
     </header>
@@ -223,7 +232,9 @@
                     <label class="footer__label">
                         <input type="tel" class="footer__input" placeholder="Enter your phone Number">
                     </label>
-                    <button class="footer__button" type="submit">Sign up Now</button>
+                    <div class="footer__button-holder">
+                        <button class="footer__button" type="submit">Sign up Now</button>
+                    </div>
                 </form>
             </div>
         </div>
